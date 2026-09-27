@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Samurai Shodown Sen — Movelist Reference</title>
+<style>
+:root{--bg:#0d1014;--panel:#161b22;--panel2:#1d2530;--ink:#edf1f5;--muted:#aab4c0;--red:#dc3f42;--gold:#e8b44b;--line:#303946;--shadow:0 12px 32px #0007}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:radial-gradient(circle at 85% 5%,#3b1618 0,transparent 28rem),var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}header{padding:54px 24px 30px;text-align:center;border-bottom:1px solid var(--line)}h1{margin:0;font-family:Georgia,serif;font-size:clamp(2rem,6vw,4.5rem);letter-spacing:.04em}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.16em;text-transform:uppercase}.sub{max-width:780px;margin:12px auto;color:var(--muted)}nav{position:sticky;top:0;z-index:10;background:#0d1014ed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:10px 16px}.nav-inner{max-width:1200px;margin:auto;display:flex;gap:8px;align-items:center}.nav-inner>a{flex:none;color:#fff;text-decoration:none;background:var(--red);padding:8px 12px;border-radius:8px;font-weight:700}.nav-scroll{display:flex;gap:7px;overflow:auto;scrollbar-width:thin}.nav-scroll a{white-space:nowrap;color:var(--muted);text-decoration:none;padding:7px 10px;border:1px solid var(--line);border-radius:8px}.nav-scroll a:hover{color:#fff;border-color:var(--gold)}main{max-width:1200px;margin:auto;padding:26px 18px 80px}.card{background:linear-gradient(145deg,var(--panel),#11161d);border:1px solid var(--line);border-radius:14px;margin:0 0 22px;overflow:hidden;box-shadow:var(--shadow)}.card h2{margin:0;padding:19px 22px;background:linear-gradient(90deg,#252c36,transparent);border-bottom:1px solid var(--line);font-family:Georgia,serif;font-size:1.65rem}.body{padding:18px 22px}.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}.pill{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:10px 12px}.key{display:inline-grid;place-items:center;min-width:34px;padding:2px 7px;border-radius:6px;background:#252d38;border:1px solid #4a5665;color:var(--gold);font:700 .88rem ui-monospace,monospace}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--gold);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;background:#11161c}tr:last-child td{border-bottom:0}tbody tr:hover{background:#ffffff05}.move{font-weight:700;width:44%}.input{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#dfe6ee}.note{color:var(--muted);font-size:.9rem}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}.toolbar input{flex:1;min-width:240px;color:#fff;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:inherit}.toolbar button{border:0;border-radius:10px;padding:10px 14px;color:#fff;background:#27313d;font-weight:700;cursor:pointer}.empty{display:none;text-align:center;color:var(--muted);padding:40px}.source{color:var(--muted)}.source a{color:var(--gold)}@media(max-width:620px){header{padding-top:34px}.body{padding:10px}.card h2{padding:15px}.move{width:39%}th,td{padding:9px 8px;font-size:.9rem}.nav-inner>a{display:none}}@media print{nav,.toolbar{display:none}body{background:#fff;color:#111}.card{box-shadow:none;break-inside:avoid;border-color:#bbb}.card h2,th{color:#111;background:#eee}.input,.note,.source{color:#333}}
+</style>
+</head><body>
+<header><div class="eyebrow">Standalone reference</div><h1>Samurai Shodown Sen</h1><p class="sub">Universal system and all 24 character movelists, translated from Xbox controller labels into the game’s attack buttons.</p></header>
+<nav><div class="nav-inner"><a href="#system">Core System</a><div class="nav-scroll" id="nav"></div></div></nav>
+<main><div class="toolbar"><input id="search" type="search" placeholder="Search characters, moves, or inputs…"><button id="expand">Collapse all</button></div>
+<section class="card" id="system"><h2>Universal Core System</h2><div class="body"><div class="legend">
+<div class="pill"><span class="key">HS</span> Horizontal Slash</div><div class="pill"><span class="key">VS</span> Vertical Slash</div><div class="pill"><span class="key">K</span> Kick</div><div class="pill"><span class="key">SP</span> Special</div>
+<div class="pill"><span class="key">HS+VS</span> Super Horizontal Slash</div><div class="pill"><span class="key">VS+K</span> Super Vertical Slash</div><div class="pill"><span class="key">HS+VS+K+SP</span> Guard Breaker</div><div class="pill"><span class="key">K+SP</span> Kick + Special</div></div>
+<table style="margin-top:16px"><thead><tr><th>Action</th><th>Input</th></tr></thead><tbody>
+<tr><td class="move">Jump</td><td class="input">↖ / ↑ / ↗</td></tr><tr><td class="move">Crouch</td><td class="input">↙ / ↓ / ↘</td></tr><tr><td class="move">Move / guard</td><td class="input">← move away & guard high · ↙ guard low · → move forward</td></tr><tr><td class="move">Shove</td><td class="input">SP</td></tr><tr><td class="move">Pull</td><td class="input">SP, ←</td></tr><tr><td class="move">Deflect</td><td class="input">← + SP</td></tr><tr><td class="move">Deflect low</td><td class="input">↙ + SP</td></tr><tr><td class="move">Sidestep</td><td class="input">tap ↑ or ↓</td></tr><tr><td class="move">Rage Explosion</td><td class="input">Taunt input while Rage bar is full</td></tr><tr><td class="move">Universal Rage attack</td><td class="input">during Rage Explosion: ↓, ↘, → + HS+VS</td></tr>
+</tbody></table><p class="note">Timing notes from the source: FI = fastest input; JI = just input. “(1)” and “(2)” distinguish timing variants; “(3)” marks a slightly different input. “~” before a direction means charge that direction.</p></div></section>
+<div id="cards"></div><div class="empty" id="empty">No matching moves.</div>
+<p class="source">Source: Andrea “Azul Fria” Castillo, <a href="https://gamefaqs.gamespot.com/xbox360/960636-samurai-shodown-sen/faqs/59558">GameFAQs Move List and Guide v1.30</a> (updated Aug. 9, 2010). Move names and inputs are reproduced as factual reference data; controller labels are converted below. Source typos and ambiguities are retained where certainty was not possible.</p></main>
+<script>
+const DATA={
+"Haohmaru":`Yodokai Kiri|RB
+Zantetsusen|RT
+Zankousen|LB
+Nagi Ashi|d, df, f
+Senpuuretsuzan Rei Shiki|f, d, df + X — FI (1)
+Senpuuretsuzan Ichi Shiki|f, d, df + X — JI (2)
+Senpuuretsuzan Ni Shiki|f, d, df + delayed X
+Kogetsuzan|f, d, df + A
+Enkyaku|f, d, df + B
+Chiretsuzan|f, d, df + B, A
+Chiretsusen|f, d, df + B, X
+Retsushinzan|d, db, b + A
+Nagi Kaeshi|X, X
+Yokozanri Chinagi|X, d + X
+Mumyou Tsuukushi|b, f + X, X, A
+Dake Kanmekizan Ha|b, f + X, X, d + A
+Kimen Wari|df + X, A
+Senran Jin|b + X, X
+Gokumon Toushi|b, f + X, X, A
+Senwari|db + X, A
+Dake Okuru|b + X, X, RB
+Oni Taosu Kyaku|df + X, B
+Gokumon Zanha|b, f + X, X, df + B
+Senpuu Souha|b + X, A
+Senpuu Ha ~ Nagi Ashi|b + X, df
+Hien Okuri|A, A
+Yokozanri Chinagi|A, A, b
+Tatezanri Oisaki Kyaku|A, B
+Haoh Tsuki|f, f + A
+Ouji Daketsue|f, f + A, RB if counterhit succeeds
+Onidama Fuuji|db + A, X, A
+Tsukagashira Otoshi|db + A (df afterward for Nagi Ashi)
+Jigoku Okuri|b + A, A, RB
+Naraku Okuri|b + A, X, B
+Tenchi Kuzurezan|during stand up, A
+Higi Chiretsusen|during stand up, d + A
+Zuii Hajiki|sidestep, A
+Sune Uchi|d + B
+Sliding|df + B
+Harai Kyaku|db + B
+Shuu Ochi|b + B
+Tenha Fuujinzan|Rage Explosion: d, df, f + RT`,
+"Genjuro Kibagami":`Yasha Muonsatsu|RB
+Shura Kyoushinzan|RT
+Gaki Messatsu|LB
+Oni Okoshi|f, d, df + X
+Gokouzan|Oni Okoshi, RB
+Kirisuburu Mikyouyaiba|f, d, df + A
+Oni Kuruma|f, d, df + B, B
+Nagi Kaeshi|X, X
+Rashoumon|X, B
+Oniyaiba Kou|b, f + X
+Oniyaiba Mikyouyaiba|b, f + X, X, A
+Tou Kyaku|b, f + X, X, B
+Onizanha ~ Onizan Tenkoku|df + X, A
+Onizanha ~ Onizan Chisou|df + X, B
+Eki Harai|db + X, RB
+Sen Arashi Jin|b + X
+Sen Arashi Jin ~ Sen Suburu Kon Kari|b + X, A, X
+Sen Arashi Jin ~ Sen Suburu Kon Tome|b + X, A, B
+Taterenzan|A, A
+Tenchuu Satsu|b + A, A, A
+Oni Chuugeki|b + A, B, RT
+Onitsuraki|f, f + A
+Hyakki Satsu|f, f + A, RB
+Gokumon|b, f + A
+Sanren Satsu|db + A, X, RB
+Hiensen|df + A
+Zui Hajiki|sidestep, A
+Hien Yaiba|during stand up, A
+Kousen Otoshi|df + B, B, B
+Ashi Harai|db + B
+Sanren Satsu|Rage Explosion, d, df, f + RT`,
+"Ukyo Tachibana":`Musou Kou Ichimonji|RB
+Musou Tate Ichimonji|RT
+Shun Tou Retsuzan|LB
+Tsubame Kaeshi|d, df, f + A, RB
+Sasame Yuki|d, df, f + X rapidly
+Ame Sakura|d, db, b + A (1)
+Ouka Issen|d, db, b + A (2)
+Joudan no Kamae|X + Y
+Shippuu|Joudan no Kamae, X, X (Y to return)
+Age Nuki ~ Sune Barai|Joudan no Kamae, X, d + X
+Yuki Okoshi|Joudan no Kamae, A, A (Y to return)
+Kerifumi|Joudan no Kamae, B (R to return — source ambiguous)
+Kogarashi|Joudan no Kamae, RB, X, A, RB
+Yukikaze|Joudan no Kamae, RB, X, A (Y to return)
+Kazeguruma|Joudan no Kamae, RT, X, A
+Kazemichi|Joudan no Kamae, X, X
+Tsubame Gaeshi|Joudan no Kamae, axis step, d + X
+Sayamaki|Joudan no Kamae, Joudan no Kamae, LTP or axis step, b + A
+Sayamaki Hensoku Tsubame Gaeshi|Sayamaki, RB, RB
+Chifumi|Sayamaki, RT
+Hana Fubuki|Sayamaki, LTP
+Tsuyubarai|db + X, A, RB (1)
+Shimo Harai|db + X, A, RB (2)
+Shiranami|b, f + X
+Yuki|b, f + A
+Tsuka Uchi|f, f + A
+Tsuka Uchi Age|df + A
+Hiken Sasame Yuki|Rage Explosion, d, df, f + RT`,
+"Nakoruru":`Notak Rera|RB
+Notak Ruyanpe|RT
+Nochi Uchurakuune Chup Rimuse|LB
+Mamahaha Ride|d, db, b + R (source ambiguous)
+Yoko Kiri|Mamahaha Ride, X
+Kamui Mutsube|Mamahaha Ride, A
+Oritekara Kazan Mawashi Kyaku|Mamahaha Ride, B
+Oriru|Mamahaha Ride, Y
+Lela Mutsube|f, f + A
+Annu Mutsube|f, f + X
+Retsu Hane Sharin|f, f + B, B
+Retsu Hane Senkyaku|f, f + B, B, d + B
+Yuki Subeki|d, df, f
+Senwa|Yuki Subeki, axis step, X
+Emushi Otoshi|Yuki Subeki, axis step, A
+Een Rera|Yuki Subeki, axis step, B
+Shin Tsuki|Yuki Subeki, X
+Kuugatsuzan|Yuki Subeki, A
+Midare Sakura|Yuki Subeki, B, A, RB
+Kyaku Shougeki|X, B or d + X, B
+Tenchi Rengeki ~ Ukotwipa|X, A, X, A, RB
+Retarai Merah|df + X, A, A
+Kodachi Renzan ~ Totsu Taka Tsume|X, A, d + A
+Kodachi Renzan ~ Yoko Retsuzan|X, A, df + X
+Kubikari ~ Shougekizan|X, A, X, df + A
+Rasen Tsubasa Ha ~ Kururi Kasanezan|X, A, A, X
+Rasen Tsubasa Ha ~ Hishousen|X, A, A, A
+Rasen Tsubasa Ha ~ Ootori Renkyaku|X, A, A, B
+Yokokiri Kokuusen|X, d + X
+Ofuku Binta ~ Matanki Kurytekeha|b + X, X, RB
+Ofuku Binta ~ Sune Kyaku|b + X, X, B
+Emushi Ruyanpe|A, X, A, RB
+Karunpan Upan|A, X, B, A, RB
+Tatekiri ~ Satsu Kiba|A, A
+Tatekiri ~ Midare Setsuna|A, B
+Yupuke Emmerah|db + A, A, A
+Nubek Koru Ai|b + A
+Rera Kolrap|df + A
+Shipiri Kanonno|db + A, A, X
+Yupukei Merah|db + A, A, A
+Mawashigeri Karengeki|B, X or B, A
+Chikoikupu Amihi|df + B, A
+Mukei Hatsu Kyaku|f + B, B
+Tenkai Kyaku|b + B, Y
+Rera Rimuse|db + B, X, X
+Nishi Kotoro Rimuse|db + B, X, A
+Gottsui Annu Mutsube|Rage Explosion, d, df, f + RT`,
+"Galford":`Justice Slash|RB
+Justice Slayer|RT
+Lightning Judgement|LB
+Sonic Slide|d, df
+Moment Move Behind|Sonic Slide, X
+Moment Move|d, df + X
+Rising Impact|d, db, b + A
+Rising Impact|d, db, b + A [chargeable] (3)
+Kunai Nage|d, db, b + X (1)
+Sonic Blade|d, db, b + X (2)
+Rush Dog|d, db, b + R (source ambiguous)
+Lightning Impact|d, df, f + A
+Strike Heads|LT
+Spring Back|b, b + Y
+Side Slay ~ Reverse Blade|X, X
+Thunder Attack Combination|db + X, X, RB
+Killing Saber|b, b + X, A (1)
+Darkness Slash|b, b + X, A (2)
+Burning Horizon|df + X, B
+Shining Horizon|df + X, d + B
+Shining Horizon ~ Ninja Slide|df + X, df
+Rising Thunder Kick Combo|db + X, B, B
+Boltech Combination|b + X, X, A
+Boltech Combination ~ Ninja Slide|b + X, X, df
+Sky Ray|while standing up from crouch, X
+Combo Lightning Storm|A, A, A
+Combo Lightning and Earth Break|A, A, B
+Sway Style ~ Rising Knuckle|b + A
+Lightning Knuckle|b + A (df to Ninja Slide)
+Leg Breaker|Lightning Knuckle, B
+Spring Back|Lightning Knuckle, b, b
+Ryuugeki|d + A, A, X (1)
+Sazan Cross Blade|d + A, A, X (2)
+Senkai Geki|f + A, X (1)
+Sonic Rush|f + A, X (2)
+Senkaze Geki|f + A, B (1)
+Grand Wheel|f + A, B (2)
+Rising Thunder|Grand Wheel, A
+Strike Heads|Grand Wheel, LT
+Combo Tornado Edge|db + A, X, X
+Rising Star|df + A
+Moon Slash|while standing up from crouch, A
+High Kick|B
+Combo Hurricane Attack|f + B, B
+Hurricane Kick ~ Bolt Charge|f + B, RB
+Boltech Crow|Hurricane ~ Bolt Charge, RB
+Fake Spin|Hurricane ~ Bolt Charge, B
+Ninja Slide|Hurricane ~ Bolt Charge, df
+Sway|Hurricane ~ Bolt Charge, b
+Combo Lightning Plasma|d + B, A, A
+Fake Kick High|df + B, B
+Fake Kick Low|df + B, df + B
+Break Loud|b + B, B
+Leg Breaker|db + B
+Tornado Kick|f, f + B
+High Side Kick|while standing up from crouch, B
+Punishing Beat|during Rage Explosion, d, df, f + RT`,
+"Hanzo Hattori":`Engetsusen|RB
+Kazaguruma Kiru|RT
+Shakyudou Yaburi|LB
+Mozu Otoshi|LT
+Kumo Ashi|d, df
+Mozu Otoshi Kai|d, df + Y (also while running)
+Mozu Otoshi Kai|Kumo Ashi, df + Y (3)
+Suigatsu|d, df + A
+Zoukan|Kumo Ashi, A
+Oboro Utsushi|d, df + X
+Ninpou Utsuhi Oboro Touchi|Kumo Ashi, X
+Hishou Kyaku|d, df + B
+Gyakugatsu|Kumo Ashi, B
+Ninpou Reppushuriken|d, db, b + X
+Tappisen|d, db, b + A [chargeable]
+Shurin Retsukyaku|d, db, b + B, B, B
+Kuuchuu Mozu Otoshi|d, db, b, f + Y
+Yami Retsuki|X, X
+Kage Kaeri|b + X, X
+Kage De Mozu Otoshi|b + X, LT
+Tsuchi Hebi Gekichi|db + X, X
+Tsuchi Hebi Mushina Kaeri|db + X, Y
+Tsuchi Hebi Kumo Ashi|db + X, df
+Kiba Messatsu|df + X, B, RB
+Kiba Kuzushi|df + X, B, B
+Zangetsu|axis step, X
+Karakubi Otoshi|standing up from crouch, X
+Taterenha|A, A
+Tate Hachisetsu Kyaku|A, B
+Ten Tsuyuharai|b + A
+Kimen Toushi|df + A
+Gyaku Retsu|db + A
+Kimon Tsurane Uchi|f, f + A, A
+Tsurane Tsuchi Geki|f + A, A, RB
+Tsuchi Geki ~ Kumo Ashi|f + A, A, RB, B
+Ninpou Oboro Utsushi Kagetou|axis step, A
+Ninpou Oboro Utsushi Sarumai|axis step, A, u
+Ninpou Oboro Utsushi Shizune|axis step, A, b
+Karasu Hane Bakutachi|standing up from crouch, A, A, RT
+Karasu Hane Kumo Ashi|standing up from crouch, A, A, df
+Kuutotsu Kyaku|B
+Chisen Kyaku|db + B
+Kurubushi Senpuu|b + B
+Iga San Ren Shuu|df + B, B, B
+Iga Ren Shuu Tou|df + B, B, d + B
+Iga San Ren ~ Kumo Ashi|df + B, B, neutral, df
+Mima Gyaku Tsuki|f + B, B, B
+Ni Gyaku Tsuki ~ Kumo Ashi|f + B, B, df
+Santei Nagare|f + B, d + B, B
+Kage Tachi|d + B, A
+Tsuru Ashi Hitou|d + B, d + B, B
+Tsuru Ashiryuu Mai|d + B, d + B, d + B
+Iizuna Kaeshi|f, f + B, B
+Iizuna Otoshi ~ Kumo Ashi|f, f + B, df
+Chisou Kyaku|axis step, B
+Mushina Kaeri|b, b + Y
+Ninpou Bakuen Ryuu|during Rage Explosion, d, df, f + RT`,
+"Kyoshiro Senryo":`Genkodoudan|RB
+Goukai Chisen|RT
+Kaen Kyokubu|LB
+Choubi Jishi|d, db, b + B
+Kaiten Kyokubu|d, df, f + X rapidly
+Kaiten Kyokubu ~ Gokuraku Kyouwaza|Kaiten Kyokubu, A
+Chuunori|d, df, f + A
+Yokonagi ~ Aori Kaeshi|X, X
+Nagare Dai Uzu|db + X, X, X
+Uzu Shibuki|db + X, X, A
+Hassou Sandan|df + X, A, X
+Hassou Ge Sandan|df + X, A, A
+Tenjou Okuri|b + X, A
+Daikaitenzan|f, f + X
+Senryou Yakusha|b, f + X
+Senryou Yakusha Roppou Tsuki|b, f + X, A, A, A, A
+Kabuki Harite|axis step, X
+Komo Kiru|standing up from crouch, X
+Naginata Uesanza|A, X, X
+Naginata Sanza|A, X, A
+Naginata Gesanza|A, X, d + X
+Rasen Nagi|db + A, X
+Nagi Shishi|db + A, B
+Roppou Tsuki|d + A, A, A, A
+Uchidashi|df + A
+Higan Watashi|b + A, A
+Higan Kaiten Kyokubu|b + A, X, X, X, X, X
+Jishi Shi Renda|b, f + A, A, A, X
+Kaimoku Geki|f, f + A
+Shin Kabuki Messatsu|Kaimoku Geki, RB
+Budai Okuri|axis step, A
+Naraku Senda|standing up from crouch, A
+Joudan Kyaku|B
+Ashi Harai|db + B
+Gedan Kyaku|d + B
+Chuudan Kyaku|df + B
+Naki Benkei|axis step, B
+Keriyame ~ Roppou Tsuki|standing up from crouch, B, A, A, A, A
+Ichibandaiko|during Rage Explosion, d, df, f + RT`,
+"Wan-Fu":`Kikou Senpuuzan|d, df, f + A
+Kikou Daikisatsu|d, df, f + X, X, X
+Heki Saishou|axis step, X
+Kouga Enkaizan|standing up from crouch, X
+Wan-Fu Teki Kobushi Ranbu|f, f + A, RT
+Wan-Fu Dai Shouten Geki ~ Ichi|b, f + A, A, A, A
+Wan-Fu Dai Shouten Geki ~ Ni|b, f + A, A, A, X
+Wan-Fu Atama Geki|f, f + A
+Dai Senpuuzan|Rage Explosion, d, df, f + RT`,
+"Charlotte":`Power Gradation|d, df, f + A, X
+Level Slayer|d, df, f + X, X
+Valeria Fleuret|b, f + X, X, X
+Valeria Roll|b, f + X, X, B
+Valeria Kudreaux|b, f + X, X, A
+Moon Slayer|db + X
+Quick Ray|df + X`,
+"Kazuki Kazama":`Rakyou Bakufun Geki|d, db, b + A, RB
+Rakyou Kouhi Geki|d, db, b + A, RT
+Rakyou Haze Kyaku|d, db, b + A, B
+Ouga Baku Honoo Tenoshira|b, f + A
+Ensenka|d, df, f + X
+Netsuten Bakufun Geki|d, db, b + B, B, A
+Gouen Nenshouken|LB`,
+"Sogetsu Kazama":`Oboro Sanshi|b, f + A, X, A, X, X
+Shougetsujin|d, df, f + A
+Tsukinage|d, df, f + X
+Senka Nagarestsuki Kei|Tsukinage, RB, X, X, X
+Suigetsu Kiba|f, f + A
+Kerigeki Shiranami no Kata|f, f + B
+Rakugetsu|b + A
+Gestu Ten Yasha|LB
+Gesshou Suichou Ha|Rage Explosion, d, df, f + RT`,
+"Kim Hae-Ryeong":`Hienzan|d, df, f + B
+Tenshouzan|d, df, f + A
+Rasensou|d, df, f + X
+Hangetsuzan|d, db, b + B
+Hiryuu Houyou|d, db, b + A, X
+Houyou Kyaku|b, db, d, df, f + B
+Hiten Houou Kyaku|Rage Explosion, d, df, f + RT`,
+"Takechiyo":`Ryuusen|d, df, f + X
+Yoku Ryuusen|d, df, f + A
+Ryuuhou Ichidan|d, db, b + A
+Dou Kudaki|df + X
+Sekinoe|b, b + A
+Yasha Gari|db + B, X, RB
+Yama Tetsu|b, f + X, X, B`,
+"Suzu":`Zanretsu Ikkaku|b, f + A, A
+Zanretsu Touhatsu|b, f + A, X
+Itsuu Setsuna|b, f + X
+Tsukyo no Hitofuri|b, b + X, X
+Sakura Kino Yuugi|b + A, A, A
+Koutetsu no Hakugetsu|d, df, f + X, X, X
+Anun wo Waru Kaminari|Rage Explosion, d, df, f + RT`,
+"J":`Speed Cut|f, f + A
+USH|RB + Y
+Overdive Cannon|USH, any button
+Calamity Combo ~ USH|d + X, A, Y on hit
+Liner Washer ~ USH|b, f + X, A, Y on hit
+Paulo Slash|df + X, Y on hit`,
+"Angelica":`Air Dance|d, db, b + X
+Spin Stab|d, db, b + A
+Escape The Heaven|b, b + X
+Stun Shot|f, f + A
+Mute Kick|b + B, B, B
+Nondeer|d + A, A, A`,
+"Walter":`Sharf Flugel|d, df, f + A
+Schneide Tifun|d, df, f + X, X, X, X
+Perfekt Butsui Wing|df + B, A, B
+Stark Reiz Stechen|b, f + A, A, A, A
+Kraut Wolke|b, f + A, A, A, df + A
+Turn Kick|b, f + A, A, A, B
+Tiger Nagel|df + A, A`,
+"Black Hawk":`Jump Smash|RB
+Grave Hammer|RT
+Call of Death|LB
+Hawk Position (HP)|sidestep, X + Y
+Murder Wing|HP, X (Y to return to HP)
+Hawk Dive|HP, A (Y to return to HP)
+Slide Shoot|HP, B
+Sky Hunter|HP, Y
+Body Press|d, df + B
+Death Mount|Body Press connects
+Tomahawk Swing|X (Y to enter HP)
+Double Tomahawk|X, X
+Eagle Rush|b, f + X, X, B
+Clip Smash|d + X, RB
+Strike Turn|on stand up, X, X
+Step Through|sidestep, X
+Break Axe|f, f + X (Y to enter HP)
+Hit to Blast|d + X, RB
+Hit to Kick|d + X, B (Y to enter HP)
+Slugger Stomp|db + X, RT
+Low to Crush|df + X, RB
+Burn Smash|b + A (Y to enter HP)
+Burn Smash (2)|b + A, RB
+Ignite Needle|f + A
+Divider|df + A
+Genocide Smash|b, b + A, A, RB
+Strike Dead|b, b + A, A, B
+Double Strike|b, b + A, A (Y to enter HP)
+Double Strike (3)|b, b + A (Y to enter HP)
+Slay Needle|A, A
+Slay Loop|A, B
+Volt Smash|df + A, RB, B (Y to enter HP)
+Volt Smash (3)|df + A (Y to enter HP)
+Volt Attack|df + A, RB (Y to enter HP)
+Volt Air Break|df + A, RT (Y to enter HP)
+Twin Edge|on stand up, A
+Hawk Symbol|f, f + A (Y to enter HP)
+Axel Smash|d + B, A
+Axel Kick|d + B, B
+Axel Feint Kick|d + B, d + B
+Axel Stomp|d + B, RT (Y to enter HP)
+Sky Revolution|d, u + B
+Rage Hawk Dive|Rage Explosion, d, df, f + RT`,
+"Jinbei Sugamata":`Gagun Shuuchuu Tsuki|d, df, f + A, A, A, A, A
+Gagun Nakashita Tsuki|d, df, f + A, A, A, A, d + A
+Tobi Yagura|b, b + A
+Yagura Otoshi|b, b + A, A, RB
+Ichi Tetsu|f, f + A
+Homare|d, db, b + A`,
+"Garros":`Cyclone Axe|d, df, f + X, X
+Cyclone Dance|d, df, f + X, RT, A
+Cyclone Driver|d, df, f + X, B, A
+Whale Driver|d, df, f + B
+Whale Crush|d, df, f + A
+Grief Strike|b, f + A, A
+Hurricane|b, b + A, A, X, X, X, X, X, X
+Revival Storm|f, f + A, X`,
+"Kirian":`Espada|b, b + X
+Trio de Replica|df + X, B, A
+Corrida de Toros (Running of the Bulls)|db + A, B, B
+Rising Phaser|b + X
+Tercio de Muerte|d, df, f + A`,
+"Rimururu":`Konru Rimuse|d, d + A, B
+Okimunbelli Rimuse|d, df + B, A, A, A
+Kau Kau Kolui Ranke|d, df + B, A, A, A
+Emshi Rimuse|b + X, A
+Lupshi Teke|d, df, f + A`,
+"Jubei Yagyu":`Yagyu Step|d, df, f
+Unnamed follow-up|Yagyu Step, X
+Hasshou Happa|Yagyu Step, A, A, A, A
+Hasshou Happa Tsuika Geri|Yagyu Step, A, A, A, A, X
+Hasshou Nitouzan|Yagyu Step, A, A, A, A, A, X
+Yagyu Ryoutou Ranbu|d, db, b + A, A, A, RB
+Yagyu Shingan Tou Souha|b + X + Y
+Yagyu Shingan Tou Tenra|db + X + Y
+Kuruma Shinzan|b + A, A, X
+Katana Sen Neguri|db + B, RB
+Shingan Itou|Rage Explosion, d, df, f + RT`,
+"Claude":`Ogre Slide|d, df, f
+Ogre Swing|Ogre Slide, X
+Kenny Rush|Ogre Slide, B, B, B
+Quadrapule A (ACE) ~ Stinger|b + X, X, X, A
+DIV (Double Impact Viper)|b, f + X, A, A
+Burst Bride|b, b + X`
+};
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function convert(s){const words={RB:'HS+VS',RT:'VS+K',LB:'HS+VS+K+SP',LT:'K+SP',X:'HS',A:'VS',B:'K',Y:'SP',u:'↑',uf:'↗',ub:'↖',d:'↓',df:'↘',db:'↙',b:'←',f:'→',LTP:'Taunt'};return s.replace(/\b(RB|RT|LB|LT|LTP|uf|ub|df|db|X|A|B|Y|u|d|b|f)\b/g,m=>words[m])}
+const nav=document.querySelector('#nav'),cards=document.querySelector('#cards');
+for(const [name,raw] of Object.entries(DATA)){const id=name.toLowerCase().replace(/[^a-z0-9]+/g,'-');nav.insertAdjacentHTML('beforeend',`<a href="#${id}">${esc(name)}</a>`);const rows=raw.trim().split('\n').map(line=>{const [move,...rest]=line.split('|');return `<tr><td class="move">${esc(move)}</td><td class="input">${esc(convert(rest.join('|')))}</td></tr>`}).join('');cards.insertAdjacentHTML('beforeend',`<section class="card character" id="${id}" data-text="${esc((name+' '+convert(raw)).toLowerCase())}"><h2>${esc(name)}</h2><div class="body"><table><thead><tr><th>Move</th><th>Input</th></tr></thead><tbody>${rows}</tbody></table></div></section>`)}
+document.querySelector('#search').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();let n=0;document.querySelectorAll('.character').forEach(c=>{const show=!q||c.dataset.text.includes(q);c.hidden=!show;n+=show});document.querySelector('#empty').style.display=n?'none':'block'});
+let open=true;document.querySelector('#expand').onclick=e=>{open=!open;document.querySelectorAll('.character .body').forEach(b=>b.hidden=!open);e.target.textContent=open?'Collapse all':'Expand all'};
+document.querySelectorAll('.character h2').forEach(h=>{h.style.cursor='pointer';h.title='Click to collapse';h.onclick=()=>h.nextElementSibling.hidden=!h.nextElementSibling.hidden});
+</script></body></html>
